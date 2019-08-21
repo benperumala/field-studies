@@ -1,0 +1,89 @@
+1. Order Insectivora - Insectivores
+    1. Family Soricidae - Shrews
+        1. Desert shrew Notiosorex crawfordi
+
+2. Order Chiroptera - Bats
+    2. Family Phyllostomatidae - Leafnose bats
+        2. Longnose bat Leptonycteris curasoae
+    3. Family Molossidae - Freetail bats
+        3. Mexican freetail bat Tadarida brasiliensis
+    4. Family Vespertilionidae – Vesper bats
+        4. Big brown bat Eptesicus fuscus
+
+3. Order Carnivora - Flesh Eaters
+    5. Family Ursidae - Bears
+        5. Black bear Ursus americanus
+        6. Brown bear Ursus arctos
+    6. Family Procyonidae - Raccoons and relatives
+        7. Raccoon Procyon lotor
+        8. Coati Nasua narica
+        9. Ringtail Bassariscus astutus
+    7. Family Mustelidae – Weasels and relatives
+        10. Badger Taxidea taxus
+        11. Long tailed weasel Mustela frenata
+        12. River otter Lutra canadensis
+    8. Family Mephitidae - Skunks
+        13. Western spotted skunk Spilogale gracilis
+        14. Striped skunk Mephitis mephitis
+        15. Hooded skunk Mephitis macroura
+        16. Hognose skunk Conepatus leuconotus
+    9. Family Canidae - Dogs
+        17. Gray Wolf Canis lupus
+        18. Coyote Canis latrans
+        19. Kit fox Vulpes macrotis
+        20. Gray fox Urocyon cinereoargentius
+    10. Family Felidae - Cats
+        21. Mountain lion Felis concolor
+        22. Jaguar Felis onca
+        23. Jaguarundi Felis yagouaroundi
+        24. Bobcat Felis rufus
+        25. Ocelot Leopardus pardalis
+
+4. Order Rodentia - Rodents
+    11. Family Sciuridae - Squirrels
+        26. Rock squirrel Spermophilus variegatus
+        27. Cliff chipmunk Tamius dorsalis
+        28. Least chipmunk Eutamius minimus
+        29. Red squirrel Tamiasciurus hudsonicus
+        30. Abert's squirrel Sciurus aberti
+        31. Arizona Gray squirrel Sciurus arizonensis
+        32. Harris' antelope ground squirrel Ammospermophilus harrisii
+        33. Roundtail ground squirrel Citellus tereticaudus
+        34. Golden mantled ground squirrel Citellus lateralis
+    12. Family Geomyidae - Pocket gophers
+        35. Botta's pocket gopher Thimomys bottae
+    13. Family Heteromyidae - Pocket mice and Kangaroo rats
+        36. Pocket mouse Perognathus sp.
+        37. Merriam kangaroo rat Dipodomys merriami
+        38. Banner-tailed kangaroo rat Dipodomys spectablilis
+    14. Family Castoridae - Beavers
+        39. Beaver Castor canadensis
+    15. Family Muridae – Mice, Rats and Voles
+        40. White footed deer mouse Peromyscus maniculatus
+        41. Whitethroat woodrat Neotoma mexicana
+        42. House mouse Mus musculus
+        43. Norway rat Rattus norvigecus
+    16. Family Erithizontidae - New World Porcupines
+        44. Porcupine Erethizon dorsatum
+
+5. Order Lagomorpha - Rabbits and Hares
+    17. Family Leporidae - Rabbits and Hares
+        45. Desert cottontail Sylvilagus audubonii
+        46. Eastern cottontail Sylvilagus floridanus
+        47. Black-tailed jackrabbit Lepus californica
+        48. Antelope jackrabbit Lepus alleni
+
+6. Order Artiodactyla - Even-toed Ungulates
+    18. Family Tayassuidae - Peccaries
+            49. Collared peccary (javelina) Tayassu tajacu
+    19. Family Cervidae - Deer
+            50. White-tailed deer Odocoileus virginianus
+            51. Mule deer Odocoileus hemionus
+            52. Elk (Wapiti) Cervus canadensis
+            53. Moose Alces alces
+            54. Caribou Rangifer tarandus
+    20. Family Antilocapridae - Pronghorns
+            55. Pronghorn Antilocapra americana
+    21. Family Bovidae - Cows
+            56. Bison Bison bison
+            57. Bighorn sheep Ovis canadensis

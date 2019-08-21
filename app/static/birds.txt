@@ -1,0 +1,134 @@
+1. Order Anseriformes - Waterfowl
+        Family Anatidae - waterfowl
+            1. Cinnamon teal Anas cyanoptera
+            2. Mallard Anas platyrynchos
+            3. Canada goose Branta canadensis *
+
+2. Order Falconiformes - Hawks and Falcons
+        Family Catharidae - vultures
+            4. Turkey vulture Cathartes aura
+        Family Accipitridae - hawks and eagles
+            5. Osprey Pandion halieatus
+            6. Cooper's hawk Accipiter cooperii
+            7. Northern harrier (marsh hawk) Circus cyaneus
+            8. Red-tailed hawk Buteo jamaicensis *
+            9. Swainson's hawk Buteo swainsoni
+            10. Harris' hawk Parabuteo unicinctus
+            11. Golden eagle Aquila chrysaetos
+            Family Falconidae - falcons
+            12. American kestrel Falco sparverius *
+            13. Prairie falcon Falco mexicanus
+
+3. Order Galliformes - Quail, Grouse and Chickens
+        Family Odontophoridae - quail
+            14. Gambel's quail Callipepla gambelii *
+            15. Scaled quail Callipepla squamata
+            16. Montezuma quail Cyrtonyx montezumae
+        Family Phasianidae - grouse and pheasants
+            17. Wild turkey Meleagris gallopavo *
+
+4. Order Ciconiiformes - Herons and Long legged Wading Birds
+        Family Ardeidae - herons and bitterns
+            18. Snowy egret Egretta thula
+            19. Great blue heron Ardea herodias
+
+5. Order Gruiformes - Cranes
+        Family Gruidae - cranes
+            20. Sandhill crane Grus canadensis *
+
+6. Order Charadriiformes - Shorebirds and Gulls
+        Family Charadriidae - plovers
+            21. Killdeer Charadrius vociferus *
+
+7. Order Columbiformes - Pigeons and Doves
+        Family Columbidae - pigeons and doves
+            22. Mourning dove Zenaida macroura *
+            23. White-winged dove Zenaida asiatica *
+            24. Rock dove (domestic pigeon) Columba livia
+            25. Inca dove Columbina inca
+
+8. Order Cucliformes - Cuckoos
+        Family Cuculidae - cuckoos
+            26. Roadrunner Geococcyx californianus
+
+9. Order Strigiformes - Owls
+        Family Strigidae - owls
+            27. Great horned owl Bubo virginianus *
+            28. Elf owl Micrathene whitneyi
+            29. Western screech owl Otus kennicottii
+
+10. Order Caprimulgiformes -Goatsuckers, whippoorwills
+        Family Caprimulgidae - nightjars
+            30. Common nighthawk Chordeiles minor *
+
+11. Order Apodiformes - Swifts and Hummingbirds
+        Family Trochilidae - hummingbirds
+            31. Anna's hummingbird Calypte anna
+            32. Costa's hummingbird Calypte costae
+            33. Broad-billed hummingbird Cynanthus latirostris
+            34. Lucifer hummingbird Calothorax lucifer
+            35. Rufous hummingbird Selasphorus rufus
+            36. Allen’s hummingbird Selasphorus sasin
+            37. Black-chinned hummingbird Archilochus alexandri
+
+12. Order Piciformes - Woodpeckers
+        Family Picidae - woodpeckers
+            38. Ladderbacked woodpecker Picoides scalaris
+            39. Northern flicker Colaptes auratus
+            40. Gila woodpecker Melanerpes uropygialis *
+            41. Acorn woodpecker Melanerpes formicivorus *
+
+13. Order Passeriformes - Perching Birds
+        Family Tyrannidae - tyrant flycatchers
+            42. Vermilion flycatcher Pyrocephalus rubinus
+            43. Say's phoebe Sayornis saya
+            44. Ash-throated flycatcher Myiarchus cinerascens
+            45. Western kingbird Tyrannus verticalis
+    14. Family Hirudinidae - swallows
+            46. Violet-green swallow Tachycineta thalassina
+    15. Family Corvidae - jays and crows
+            47. Common raven Corvus corax *
+            48. Steller's jay Cyanocitta stelleri
+            49. Mexican jay (gray-breasted) Aphelocoma ultramarina *
+            50. Gray jay Perisoreus canadensis
+    16. Family Paridae - chickadees and titmice
+            51. Mountain chickadee Poecile gambeli
+            52. Bridled titmouse Baeolophus wollweberi *
+    17. Family Remizidae - verdins
+            53. Verdin Auriparus flaviceps
+    18. Family Sittidae - nuthatches
+            54. White-breasted nuthatch Sitta carolinensis
+            55. Pygmy nuthatch Sitta pygmaea
+    19. Family Troglodytidae - wrens
+            56. Bewick's wren Thryomanes bewickii
+            57. Cactus wren Campylorhynchus bru nneicapillus *
+            58. Canyon wren Catherpes mexicanus *
+    20. Family Sylviidae - gnatcatchers
+            59. Black-tailed gnatcatcher Polioptila melanura
+    21. Family Turdidae - thrushes
+            60. American robin Turdus migratorius
+            61. Western bluebird Sialia mexicana
+            62. Mountain bluebird Sialia currucoides
+    22. Family Mimidae - thrashers
+            63. Mockingbird Mimus polyglottos
+            64. Curved-billed thrasher Toxostoma curvirostre *
+    23. Family Bombycillidae - waxwings
+            65. Cedar waxwing Bombycilla cedrorum
+    24. Family Ptilogonidae - silky flycatchers
+            66. Phainopepla Phainopepla nitens
+    25. Family Sturnidae - starlings
+            67. European starling Sturnus vulgaris
+    26. Family Cardinalidae - cardinals
+            68. Pyrrhuloxia Cardinalis sinuatus *
+            69. Cardinal Cardinalis cardinalis
+    27. Family Emberizidae – new world sparrows
+            70. Song sparrow Melospiza melodia
+            71. White-crowned sparrow Zonotrichia leucophrys
+    28. Family Icteridae - tanangers and blackbirds
+            72. Red-winged blackbird Agelaius phoeniceus *
+            73. Great-tailed grackle Quiscalus mexicanus
+    29. Family Passeridae - weaver finches
+            74. House sparrow Passer domesticus
+    30. Family Fringillidae - finches
+            75. House finch Carpodacus mexicanus
+            76. Lesser goldfinch Carduelis psaltria

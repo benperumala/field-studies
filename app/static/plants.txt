@@ -1,0 +1,147 @@
+1. Phylum Pteridophyta – Ferns and Horsetails
+    1. Family Equisetaceae - Horsetails
+        1. Horsetail Equisetum sp.
+
+
+    2. Family Polypodiaceae - Ferns
+        2. Braken fern Pteridium aquilinum
+
+2. Phylum Coniferophyta - Naked seeded plants (conifers)
+    3. Family Pinaceae - Pines and Cone Bearing Plants
+        3. White fir (balsam fir) Abies concolor
+        4. Piñon (Pinyon pine) Pinus cembroides
+        5. Chihuahua pine Pinus leiophylla
+        6. Limber pine (Rocky Mountain white pine) Pinus flexilis
+        7. Ponderosa pine (yellow pine) Pinus ponderosa
+        8. Apache pine Pinus latifolia
+        9. Englemann spruce Pices englemanni
+        10. Blue spruce Pices pungens
+        11. Douglas fir Pseudotsuga menziesii
+
+
+    4. Family Cupressaceae - Cypresses
+        12. Alligator juniper Juniperus deppeana
+
+
+    5. Family Ephedraceae -
+        13. Mormon tea Ephedra sp.
+
+
+3. Phylum Anthophyta - Protected seeded plants (flowers)
+    Class Dicotyledinae - Dicots
+        6. Family Malvaceae - Mallows
+            14. Globe mallow Sphaeralcea ambigua
+
+
+        7. Family Zygophyllaceae
+            15. Creosote bush Larrea tridentata
+
+
+        8. Family Tamaricaceae - Tamarisks
+            16. Tamarisk Tamarix pendantra
+
+
+        9. Family Fouquireaceae -
+            17. Ocotillo Fourqueria splendens
+
+
+        10. Family Cactacea - Cacti
+            18. Fishhook barrel cactus Ferocactus  wislizenii
+            19. Cowtongue pricklypear Opuntia lindheimeri
+            20. Beavertail pricklypear Opuntia basilaris
+            21. Staghorn cholla Opuntia versicolor
+            22. Englemann pricklypear Opuntia englemannii
+            23. Teddybear cholla Opuntia biglovii
+            24. Chainfruit cholla Opuntia fulgida
+            25. Christmas (pencil) cholla Opuntia leptocaulis
+            26. Saguaro Carneigia giganeus
+            27. Hedgehog cactus Echinocereus fasciculatus
+
+
+        11. Family Chenopodiaceae - Goosefoots
+            28. Russian thistle (tumbleweed) Salsola kali
+
+
+        12. Family Ericaceae – Heathers and Heaths
+            29. Manzanita Arctostaphylos sp.
+
+
+        13. Family Oleaceae - Olives
+            30. Arizona ash (velvet ash) Fraxinus velutina
+
+
+        14. Family Solanaceae – Tomatoes, Potatoes and Nightshade
+            31. Desert tobacco Nicotiana trigonophylla
+            32. Jimson weed (datura) Datura meteloides
+
+
+        15. Family Scrophulariaceae - Snapdragons
+            33. Monkeyflower Mimulus sp.
+            34. Penstemon Penstemon  sp.
+
+
+        16. Family Fabaceae (Leguminosae) - Peas and Beans
+            35. Blue palo verde Parkinsonia florida
+            36. Yellow palo verde (Foothill palo verde) Parkinsonia microphylla
+            37. Mexican palo verde Parkinsonia aculeata
+            38. Mesquite Prosopis sp.
+            39. Whitethorn acacia Acacia constricta
+            40. Sweet acacia (huisache) Acacia farnesiana
+            41. Catclaw acacia Acacia greggii
+            42. Fairy duster Calliandra eriophylla
+            43. Desert senna (Twinleaf senna) Senna bauhinioides
+
+
+        17. Family Platanceae - Sycamores
+            44. Arizona sycamore Platanus wrightii
+
+        18. Family Fagaceae - Oaks and Beeches
+            45. Emory oak Quercus emoryi
+            46. Arizona white oak Quercus arizonica
+            47. Mexican blue oak Quercus oblongifolia
+            48. Silverleaf oak Quercus hypoleucoides
+            49. Gambel's oak Quercus gambeli
+
+        19. Family Juglandaceae  -  Walnuts
+            50. Arizona walnut Juglans major
+
+        20. Family Salicaceae - Willows and Cottonwoods
+            51. Quaking aspen Populus tremuloides
+            52. Fremont cottonwood Populus fremontii
+            53. Goodding willow Salix gooddingi
+
+        21. Family Ulmaceae - Elms
+            54. Desert hackberry Celtis pallida
+
+        22. Family Rhamnaceae - Buckthorns
+            55. Graythorn Ziziphus obtusifolia
+
+        23. Family Viscaceae - Mistletoes
+            56. Desert mistletoe Phoradendron californicum
+
+        24. Family Aceraceae - Maples
+            57. Bigtooth maple Acer grandidentatum
+
+        25. Family Anacardiaceae - Sumacs
+            58. Lemonadeberry Rhus trilobata
+            59. Poison oak (poison ivy) Toxicodendron radicans
+
+        26. Family Cucurbitaceae - Melons
+            60. Coyote melon Cucurbita foetidissima
+
+        27. Family Asteraceae (Compositae) - Sunflowers
+            61. Brittlebush Encelia farinosa
+            62. Canyon ragweed Ambrosia ambroisiodes
+            63. Desert marigold Baileya multiradiata
+            64. Wild zinnia Zinnia acerosa
+            65. Desert broom Baccharus sarothroides
+            66. Triangle-leafed bursage Ambrosia deltoidea
+
+
+    Class Monocotyledinae  - Monocots
+        28. Family Liliaceae - Lilies
+            67. Soaptree yucca Yucca elata
+
+
+        29. Family Agavaceae - Agaves and Aloes
+            68. Century plant (agave) Agave sp.

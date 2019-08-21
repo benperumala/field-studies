@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ben's Field Study Noteboook">
+    <meta name="author" content="Benjamin P">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('favicon') }}">
+
+    <title>Ben's Field Study Site (Quiz)</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{{ url_for('static', filename='css/ie10-viewport-bug-workaround.css') }}" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="{{ url_for('static', filename='css/starter-template.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/pace.min.js') }}"></script>
+    <link href="{{ url_for('static', filename='css/pace.css') }}" rel="stylesheet">
+    <!-- <link href="{{ url_for('static', filename='css/quiz.css')|autoversion }}" rel="stylesheet"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('homepage') }}">Ben's Field Study Site</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    {% if db_name == "birds" %}
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Birds <span class="caret"></span>
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='birds') }}">Bird viewer</a></li>
+                            <li class="active"><a href="{{ url_for('quiz', db_name='birds')}}">Quiz</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Resources</li>
+                            <li><a href="#" onclick="nbci();">NCBI Articles</a></li>
+                            <li><a href="http://www.birds.cornell.edu/AllAboutBirds/birding123/identify" target="_blank">Bird ID</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plants <span class="caret"></span>
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='plants') }}">Plant viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='plants')}}">Quiz</a></li>
+                            <!-- <li class="dropdown-header">Resources</li> -->
+                            <!-- <li><a href="#">Kahoot</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reptiles &amp; Amphibians <span class="caret"></span>
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='reptilesamphibians') }}">Reptiles &amp; Amphibians viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='reptilesamphibians')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Mammals <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='mammals') }}">Mammals viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='mammals')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    {% elif db_name == "plants" %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Birds <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='birds') }}">Bird viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='birds')}}">Quiz</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Resources</li>
+                            <li><a href="#" onclick="nbci();">NCBI Articles</a></li>
+                            <li><a href="http://www.birds.cornell.edu/AllAboutBirds/birding123/identify" target="_blank">Bird ID</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plants <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='plants') }}">Plant viewer</a></li>
+                            <li class="active"><a href="{{ url_for('quiz', db_name='plants')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reptiles &amp; Amphibians <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='reptilesamphibians') }}">Reptiles &amp; Amphibians viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='reptilesamphibians')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Mammals <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='mammals') }}">Mammals viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='mammals')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    {% elif db_name == "reptilesamphibians" %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Birds <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='birds') }}">Bird viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='birds')}}">Quiz</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Resources</li>
+                            <li><a href="#" onclick="nbci();">NCBI Articles</a></li>
+                            <li><a href="http://www.birds.cornell.edu/AllAboutBirds/birding123/identify" target="_blank">Bird ID</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plants <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='plants') }}">Plant viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='plants')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reptiles &amp; Amphibians <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='reptilesamphibians') }}">Reptiles &amp; Amphibians viewer</a></li>
+                            <li class="active"><a href="{{ url_for('quiz', db_name='reptilesamphibians')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Mammals <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='mammals') }}">Mammals viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='mammals')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    {% elif db_name == "mammals" %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Birds <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='birds') }}">Bird viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='birds')}}">Quiz</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Resources</li>
+                            <li><a href="#" onclick="nbci();">NCBI Articles</a></li>
+                            <li><a href="http://www.birds.cornell.edu/AllAboutBirds/birding123/identify" target="_blank">Bird ID</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plants <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='plants') }}">Plant viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='plants')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reptiles &amp; Amphibians <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='reptilesamphibians') }}">Reptiles &amp; Amphibians viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='reptilesamphibians')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Mammals <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='mammals') }}">Mammals viewer</a></li>
+                            <li class="active"><a href="{{ url_for('quiz', db_name='mammals')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    {% else %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Birds <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='birds') }}">Bird viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='birds')}}">Quiz</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Resources</li>
+                            <li><a href="#" onclick="nbci();">NCBI Articles</a></li>
+                            <li><a href="http://www.birds.cornell.edu/AllAboutBirds/birding123/identify" target="_blank">Bird ID</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plants <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='plants') }}">Plant viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='plants')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reptiles &amp; Amphibians <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='reptilesamphibians') }}">Reptiles &amp; Amphibians viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='reptilesamphibians')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Mammals <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('db_reader', db_name='mammals') }}">Mammals viewer</a></li>
+                            <li><a href="{{ url_for('quiz', db_name='mammals')}}">Quiz</a></li>
+                        </ul>
+                    </li>
+                    {% endif %}
+                </ul>
+                <ul class="nav navbar-nav" style="float: right">
+                    <li><a href="#" onclick="alert('Coming in a future update');">Update Log</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="starter-template">
+            <div class="row">
+                <div class="col-md-12">
+                    <img id="picture" class="img-thumbnail img-responsive center-block" src="">
+                    <br />
+                    <div id="audio">
+                        <audio controls>
+                                <source class="souce mp3" src="" type="audio/mpeg">
+                                <source class="source ogg" src="" type="audio/ogg">
+                                Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <span class="description">Description</span>
+                    <br />
+                    <br />
+                </div>
+                <!-- TODO: Show how many orgs you've gotten correct  -->
+                <div class="col-md-12 multiple-choice">
+                    <div class="btn-group hidden-xs">
+                        <button type="button" class="btn btn-primary btn-block quiz-option 0"></button>
+                        <button type="button" class="btn btn-primary btn-block quiz-option 1"></button>
+                        <button type="button" class="btn btn-primary btn-block quiz-option 2"></button>
+                        <button type="button" class="btn btn-primary btn-block quiz-option 3"></button>
+                    </div>
+                    <div class="btn-group-vertical visible-xs">
+                        <button type="button" class="btn btn-primary btn-block quiz-option 0"></button>
+                        <button type="button" class="btn btn-primary btn-block quiz-option 1"></button>
+                        <button type="button" class="btn btn-primary btn-block quiz-option 2"></button>
+                        <button type="button" class="btn btn-primary btn-block quiz-option 3"></button>
+                    </div>
+                </div>
+                <div class="col-md-12 single-choice" style="display: none;">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <div class="input-group input-group-lg">
+                                    <input id="spelling" type="text" class="form-control" placeholder="Name here" autocomplete="off">
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary">Check answer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <br />
+                    <button id="spelling-button" onclick="$('#spelling-debug').show();" style="display: none;" type="button" class="btn btn-primary">See correct spelling</button>
+                    <br />
+                    <div id="spelling-debug" style="display: none;"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="margin-top: 1em;">
+                    <form action="">
+                        {% if db_name == "birds" %}
+                        <label style="margin: 0.5em;">
+                            <input id="onlySounds" type="checkbox" name="sounds">
+                            &nbsp;
+                            Only show birds with calls
+                        </label>
+                        <label style="margin: 0.5em;">
+                            <input id="onlySmallerList" type="checkbox" name="smaller_list">
+                            &nbsp;
+                            Show smaller bird list (for people who came during 2nd semester)
+                        </label> {% endif %}
+                        <label style="margin: 0.5em;">
+                            <input id="noThumbnail" type="checkbox" name="thumbnail">
+                            &nbsp;
+                            Don't show picture
+                        </label>
+                        <label style="margin: 0.5em;">
+                            <input id="showDescription" type="checkbox" name="description">
+                            &nbsp;
+                            Don't show description
+                        </label>
+                        <label style="margin: 0.5em;">
+                            <input id="onlySpelling" type="checkbox" name="spelling">
+                            &nbsp;
+                            Spelling mode
+                        </label>
+                    </form>
+                    <footer class="footer">
+                        All media belongs to their respective owner(s).
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write("<script src=\"{{ url_for('static', filename='js/jquery.min.js') }}\"><\/script>")
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{{ url_for('static', filename='js/ie10-viewport-bug-workaround.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/seedrandom.min.js') }}"></script>
+    <script>
+    const DB_NAME = "{{ db_name }}";
+    const DB_VERSION = {{ db_version }};
+    const PATH_API = "/api/get-info/{{ db_name }}/";
+    const PATH_AUDIO = "{{ url_for('static', filename='sounds/') }}{{ db_name }}/";
+    const PATH_IMAGES = "{{ url_for('static', filename='imgs/') }}{{ db_name }}/thumbnails/";
+
+        // TODO Set as macro
+        $(document).ready(function() {
+            $.getMultiScripts = function(arr, path) {
+                var _arr = $.map(arr, function(scr) {
+                    return $.getScript((path || "") + scr);
+                });
+                _arr.push($.Deferred(function(deferred) {
+                    $(deferred.resolve);
+                }));
+                return $.when.apply($, _arr);
+            }
+            function preloadImages(images) {
+                $(images).each(function(key) {
+                    $('<img class="cacheimage" />').attr('src', images[key]).appendTo('body').hide();
+                });
+            }
+            {% if config.DEBUG %}
+            var script_arr = [
+                "{{ url_for('static', filename='js/tools.js')|autoversion }}",
+                "{{ url_for('static', filename='js/quiz.js')|autoversion }}",
+                "{{ url_for('static', filename='js/storage.js')|autoversion }}",
+                "{{ url_for('static', filename='js/diff.js')|autoversion }}"
+            ]
+            {% else %}
+            var script_arr = [
+                "{{ url_for('static', filename='js/tools.min.js')|autoversion }}",
+                "{{ url_for('static', filename='js/quiz.min.js')|autoversion }}",
+                "{{ url_for('static', filename='js/storage.min.js')|autoversion }}",
+                "{{ url_for('static', filename='js/diff.min.js')|autoversion }}"
+            ]
+            {% endif %}
+            var orgs;
+            var mainOrgArray;
+            $.getMultiScripts(script_arr).done(function() {
+                $("#picture").attr("onerror", "imgError(this);")
+                {% if not config.DEBUG %}
+                try {
+                {% endif %}
+                    if(checkLocalStorage()) {
+                        $.when(validateStorage(DB_NAME)).done(function(data) {
+                            pictures = []
+                            window.orgs = data.orgs;
+                            window.mainOrgArray = data.orgs;
+
+                            // Generate a quiz option
+                            quizOptions(window.orgs, []);
+
+                            // Cache all thumbnails
+                            for(x=1; x < window.orgs.length; x++) {
+                                pictures.push(PATH_IMAGES + x + ".jpg");
+                            }
+                            $.when(preloadImages(pictures)).done(function() {
+                                $(".cacheimage").remove();
+                            });
+                        });
+                    }
+                {% if not config.DEBUG %}
+                } catch(e) {
+                    ans = confirm("Unable to validate local data. Would you like to clear localStorage?");
+                    if(ans) {
+                        window.localStorage.clear();
+                        location.reload();
+                    }
+                }
+                {% endif %}
+            }).fail(function(jqxhr, settings, exception) {
+                alert("An error occured getting or running the needed js files (" + jqxhr.status + " - " + settings + ") ");
+                console.error("An error occured getting or running the needed js files (" + jqxhr.status + " - " + settings + ") ");
+                console.debug(jqxhr.responseText);
+            });
+        })
+    </script>
+</body>
+
+</html>

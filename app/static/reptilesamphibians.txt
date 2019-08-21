@@ -1,0 +1,61 @@
+1. Order Caudata - Salamanders
+        Family Ambystomatidae - Mole Salamanders
+            1. Tiger salamander Ambystoma tigrinum
+
+2. Order Salienta - Frogs and Toads
+        Family Pelobatidae - Spadefoots
+            2. Couch's spadefoot Scaphiopus couchii
+        Family Bufonidae - True Toads
+            3. Sonoran desert toad (Colorado River toad) Bufo alvarius
+            4. Sonoran green toad Bufo retiformus
+            5. Red spotted toad Bufo punctatus
+        Family Hylidae - Treefrogs
+            6. Arizona tree frog Hyla eximia
+        Family Ranidae - True Frogs
+            7. Leopard frog Rana pipiens
+            8. Bullfrog Rana catesbeiana
+
+3. Order Testudines - Turtles and Tortoises
+        Family Emydidae - Pond and Box Turtles
+            9. Ornate box turtle Terrapene ornata
+        Family Kinosternidae - Musk and Mud Turtles
+            10. Sonoran mud turtle Kinosternon sonoriense
+        Family Testudinidae - Land Tortoises
+            11. Desert tortoise Gopherus agassizii
+
+4. Order Squamata - Snakes and Lizards
+        Family Eublepharidae - Eye-lidded Geckos
+            12. Western banded gecko Coleonyx variegatus
+        Family Crotaphytidae - Collared and Leopard Lizards
+            13. Common collared lizard Crotaphytus collaris
+        Family Iguanidae - Iguanas and Chuckwallas
+            14. Desert iguana Dipsosaurus dorsalis
+            15. Common Chuckwalla Sauromalis obesus
+        Family Phrynosomatidae - Lizards
+            16. Zebra-tailed lizard Callisaurus draconoides
+            17. Desert spiny lizard Sceloporus magister
+            18. Regal horned lizard Phrynosoma solare
+            19. Side-blotched lizard Uta stansburiana
+            20. Greater earless lizard Cophosaurus texanus
+            21. Ornate tree lizard Urosaurus ornatus
+        Family Teiidae - Whiptails
+            22. Sonoran spotted whiptail Aspidoscelis sonorae
+            23. Tiger whiptail Aspidoscelis tigris
+        Family Helodermatidae - Venomous Lizards
+            24. Gila monster Heloderma suspectum
+        Family Colubridae - Colubrid Snakes
+            25. Sonoran whipsnake Masticophis bilineatus
+            26. Coachwhip Masticophis flagellum
+            27. Gophersnake (bull snake) Pituophis melanoleucus
+            28. Common kingsnake Lampropeltis getulus
+            29. Sonoran mountain kingsnake Lampropeltis pyromelana
+            30. Black-necked garter snake Thamnophis cyrtopsis
+            31. Long-nosed snake Rhinocheilus lecontei
+            32. Lyresnake Trimorphodon bisctatus
+        Family Elapidae - Coral Snakes
+            33. Sonoran coral snake Micruroides euryxanthus
+        Family Viperidae - Vipers
+            34. Western diamond-backed rattlesnake Crotalus arox
+            35. Sidewinder Crotalus cerastes
+            36. Mojave rattlesnake Crotalus scutulatus
+            37. Black-tailed rattlesnake Crotalus molossus
