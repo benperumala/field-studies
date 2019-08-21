@@ -1,4 +1,4 @@
-# FIeld Study Flask Application
+# Field Study Flask Application
 For use in identifying Arizona birds, amphibians, reptiles, and plants
 
 # Installation
